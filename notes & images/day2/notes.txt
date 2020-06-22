@@ -1,0 +1,64 @@
+Feature: to validate login 
+
+Scenario: to check if the user is valid 
+
+Given the web application is loaded 
+When the user logs in with user name 
+And the password 
+Then take the user to home page 
+
+
+
+Scenario: to check if the user is invalid 
+
+Given the web application is loaded 
+When the user logs in with user name 
+And the password 
+Then take the user to error page 
+
+
+1 end-to-end BDD 
+at 2 features and each feature with 2 scenarios 
+cucumber plugin 
+
+
+
+
+
+
+to install testng 
+
+ https://dl.bintray.com/testng-team/testng-eclipse-release/
+ 
+ 
+ market place 
+ https://marketplace.eclipse.org/content/testng-eclipse
+ 
++ - One or more occrances 
+* - Zero or more occurances 
+? - zero or one occurance 
+[a-z] - look for a-z for 1 char 
+[a-z]+ - look for a-z  for 1 or more occurance 
+[a-z]* - look for a-z for 0 or more occurance 
+. - look for excatly 1 occurance 
+{} - to specify number of words 
+
+
+
+naveen.srinivas@manipalglobal.com
+adith.naveen@gmail.com 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 

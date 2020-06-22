@@ -1,0 +1,92 @@
+all participants know selenium - 100% 
+POM Framework - Selnium ()
+TestNG or JUnit ? - TestNG 
+Maven Project 
+Introduction To Cucumber Architecture - 01
+Introduction To Cucumber
+
+upskill 
+
+
+Sprint 1 or 2 weeks 
+
+
+TDD (Test Driven Development) - Developer 
+BDD (Behavioural Driven Development) - Stake Hodler - English
+									Kannada/French 
+
+Given the user name and password 
+When the web page is loaded 
+Then it should take me to home page 
+
+Cucumber 
+
+DDD (Domain Driven Development) - Product Owners - show 
+				business output 
+
+
+
+Cucumber 
+Gherkin - Ruby (JVM - Platform independent)
+
+
+Norms / Standards 
+Given - Pre Condition 
+When - Action 
+Then - Post Condition 
+
+And - Multiple Condition 
+But - post condional check otherwise 
+
+
+every cucumber to be written in a file ends with .feature 
+
+login.feature 
+-----------------------------------
+Given valid username 
+And valid password  
+When the website is working 
+Then user to be routed to home page 
+
+
+class MyStepClass {
+	@When("the website is working")
+	public void myMethod1(){
+		driver.get("Somewebsite.com"); 
+	}
+
+	public void myMethod2(){
+		driver.findElement(By.id("someid")); 
+		}
+}
+
+
+JUnit  or TestNG 
+
+
+@RunWith(Cucumber.class)
+@CubumerOptions(
+	packages={"", "", ""}, -- where step files are kept 
+	features={"", "", ""} - where features files are kept 
+)
+class TestRunner {}
+
+
+src/main/java - Step, Selenium code, Util, POM, Generic, 
+		Screen Shot 
+src/main/resources - .properties , .feature 
+src/test/java - TestRunner -TestNG or JUnit Files 
+src/test/resources - .xlsx, .csv, .ser 
+
+
+
+
+Cucumber
+Junit (RunWith)
+TestNG 
+
+
+
+
+
+

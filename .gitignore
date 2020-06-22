@@ -1,0 +1,11 @@
+.DS_Store
+trainer-works/.metadata
+trainer-works/cucumber-works/.settings
+trainer-works/cucumber-works/.project
+trainer-workss/cucumber-works/target
+trainer-workss/cucumber-works/test-output 
+trainer-workss/cucumber-works/.DS_Store
+
+
+*.class
+

@@ -1,0 +1,264 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# this is my comment"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "to check if the user is valid",
+        "description": "",
+        "id": "to-validate-login;to-check-if-the-user-is-valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 79556316,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the web application is loaded",
+            "match": {
+              "location": "LoginStep.the_web_application_is_loaded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36615,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user logs in with user name",
+            "match": {
+              "location": "LoginStep.the_user_logs_in_with_user_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44815,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the password is entered",
+            "match": {
+              "location": "LoginStep.the_password_is_entered()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1208592,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is \"valid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStep.the_user_is_type(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49895,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "take the user to \"home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginStep.take_the_user_to_userPage_page(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "to check if the user is invalid",
+        "description": "",
+        "id": "to-validate-login;to-check-if-the-user-is-invalid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 34439,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the web application is loaded",
+            "match": {
+              "location": "LoginStep.the_web_application_is_loaded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user logs in with user name",
+            "match": {
+              "location": "LoginStep.the_user_logs_in_with_user_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26771,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the password is entered",
+            "match": {
+              "location": "LoginStep.the_password_is_entered()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46455,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user is \"invalid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStep.the_user_is_type(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44576,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "take the user to \"error\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "error",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginStep.take_the_user_to_userPage_page(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "to check if the user is invalid",
+        "description": "",
+        "id": "to-validate-login;to-check-if-the-user-is-invalid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 34657,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the web application is loaded",
+            "match": {
+              "location": "LoginStep.the_web_application_is_loaded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22416,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user logs in with user name",
+            "match": {
+              "location": "LoginStep.the_user_logs_in_with_user_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21754,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the password is entered",
+            "match": {
+              "location": "LoginStep.the_password_is_entered()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44111,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user is \"manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "manager",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStep.the_user_is_type(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40020,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "take the user to \"successmanager\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "successmanager",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginStep.take_the_user_to_userPage_page(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "to validate login",
+    "description": "",
+    "id": "to-validate-login",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
