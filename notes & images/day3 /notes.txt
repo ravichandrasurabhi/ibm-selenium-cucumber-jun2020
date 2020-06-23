@@ -1,0 +1,85 @@
+login.feature 
+
+Scenario: 
+Given 
+When
+Then 
+
+Scenario: 
+Given 
+When
+Then 
+
+
+creditscore.feature 
+
+Scenario: 
+Given 
+When 
+Then 
+
+
+we can have more than 1 features (in same package or different package)
+sanity test - execute everything once 
+regression test - few features you want to test multiple times 
+login test  - 500 times 
+customer test - 1000 times 
+
+Tags 
+Data tables 
+more than 1 feature file 
+
+  Scenario: to check if the user is valid
+    Given the web application is loaded
+    When the user logs in with user name
+    And the password is entered
+    When the user is "valid"
+    Then take the user to "home" page
+
+  Scenario: to check if the user is invalid
+    Given the web application is loaded
+    When the user logs in with user name
+    And the password is entered
+    When the user is "invalid"
+    Then take the user to "error" page
+
+
+you can find cucumber plugin here 
+https://cucumber.github.io/cucumber-eclipse/
+
+
+for telecom 
+Feature: validating the user call details 
+
+Scenario: to check if the user has dialed valid number 
+
+Given the telephone is working 
+When the number is dialed 
+And ring tone is heard 
+Then the call is picked by recipient 
+But there should not be a distrubance 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

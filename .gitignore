@@ -5,6 +5,7 @@ trainer-works/cucumber-works/.project
 trainer-works/cucumber-works/target
 trainer-works/cucumber-works/test-output 
 trainer-works/cucumber-works/.DS_Store
+trainer-works/cucumber-works/test-output
 
 
 *.class

@@ -1,255 +1,98 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("creditscore.feature");
 formatter.feature({
-  "comments": [
+  "line": 2,
+  "name": "this is for sample check of credit score",
+  "description": "",
+  "id": "this-is-for-sample-check-of-credit-score",
+  "keyword": "Feature",
+  "tags": [
     {
       "line": 1,
-      "value": "# this is my comment"
+      "name": "@sanity"
+    },
+    {
+      "line": 1,
+      "name": "@credit"
     }
-  ],
-  "line": 2,
-  "name": "to validate login",
-  "description": "",
-  "id": "to-validate-login",
-  "keyword": "Feature"
+  ]
 });
 formatter.scenario({
   "line": 4,
-  "name": "to check if the user is valid",
+  "name": "just check if you can get load",
   "description": "",
-  "id": "to-validate-login;to-check-if-the-user-is-valid",
+  "id": "this-is-for-sample-check-of-credit-score;just-check-if-you-can-get-load",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "the web application is loaded",
+  "name": "you have enough credit score",
+  "rows": [
+    {
+      "comments": [
+        {
+          "line": 6,
+          "value": "## heading"
+        }
+      ],
+      "cells": [
+        "work_type",
+        "years_of_exp"
+      ],
+      "line": 7
+    },
+    {
+      "cells": [
+        "govt",
+        "5a"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
+        "private",
+        "6b"
+      ],
+      "line": 9
+    },
+    {
+      "cells": [
+        "consultant",
+        "9"
+      ],
+      "line": 10
+    }
+  ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "the user logs in with user name",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "the password is entered",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "the user is \"valid\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "take the user to \"home\" page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStep.the_web_application_is_loaded()"
-});
-formatter.result({
-  "duration": 79556316,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStep.the_user_logs_in_with_user_name()"
-});
-formatter.result({
-  "duration": 36615,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStep.the_password_is_entered()"
-});
-formatter.result({
-  "duration": 44815,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "valid",
-      "offset": 13
-    }
-  ],
-  "location": "LoginStep.the_user_is_type(String)"
-});
-formatter.result({
-  "duration": 1208592,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "home",
-      "offset": 18
-    }
-  ],
-  "location": "LoginStep.take_the_user_to_userPage_page(String)"
-});
-formatter.result({
-  "duration": 49895,
-  "status": "passed"
-});
-formatter.scenario({
   "line": 11,
-  "name": "to check if the user is invalid",
-  "description": "",
-  "id": "to-validate-login;to-check-if-the-user-is-invalid",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "name": "you apply for loan",
+  "keyword": "When "
 });
 formatter.step({
   "line": 12,
-  "name": "the web application is loaded",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 13,
-  "name": "the user logs in with user name",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 14,
-  "name": "the password is entered",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "the user is \"invalid\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 16,
-  "name": "take the user to \"error\" page",
+  "name": "loan is sanctioned",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStep.the_web_application_is_loaded()"
+  "location": "CredtiScoreStep.you_have_enough_credit_score(DataTable)"
 });
 formatter.result({
-  "duration": 34439,
-  "status": "passed"
+  "duration": 68968088,
+  "error_message": "java.lang.NumberFormatException: For input string: \"5a\"\n\tat java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n\tat java.lang.Integer.parseInt(Integer.java:580)\n\tat java.lang.Integer.parseInt(Integer.java:615)\n\tat com.training.steps.CredtiScoreStep.you_have_enough_credit_score(CredtiScoreStep.java:28)\n\tat ✽.Given you have enough credit score(creditscore.feature:5)\n",
+  "status": "failed"
 });
 formatter.match({
-  "location": "LoginStep.the_user_logs_in_with_user_name()"
+  "location": "CredtiScoreStep.you_apply_for_loan()"
 });
 formatter.result({
-  "duration": 23600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "LoginStep.the_password_is_entered()"
+  "location": "CredtiScoreStep.loan_is_sanctioned()"
 });
 formatter.result({
-  "duration": 26771,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "invalid",
-      "offset": 13
-    }
-  ],
-  "location": "LoginStep.the_user_is_type(String)"
-});
-formatter.result({
-  "duration": 46455,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "error",
-      "offset": 18
-    }
-  ],
-  "location": "LoginStep.take_the_user_to_userPage_page(String)"
-});
-formatter.result({
-  "duration": 44576,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 18,
-  "name": "to check if the user is invalid",
-  "description": "",
-  "id": "to-validate-login;to-check-if-the-user-is-invalid",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 19,
-  "name": "the web application is loaded",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 20,
-  "name": "the user logs in with user name",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 21,
-  "name": "the password is entered",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 22,
-  "name": "the user is \"manager\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 23,
-  "name": "take the user to \"successmanager\" page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStep.the_web_application_is_loaded()"
-});
-formatter.result({
-  "duration": 34657,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStep.the_user_logs_in_with_user_name()"
-});
-formatter.result({
-  "duration": 22416,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStep.the_password_is_entered()"
-});
-formatter.result({
-  "duration": 21754,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "manager",
-      "offset": 13
-    }
-  ],
-  "location": "LoginStep.the_user_is_type(String)"
-});
-formatter.result({
-  "duration": 44111,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "successmanager",
-      "offset": 18
-    }
-  ],
-  "location": "LoginStep.take_the_user_to_userPage_page(String)"
-});
-formatter.result({
-  "duration": 40020,
-  "status": "passed"
+  "status": "skipped"
 });
 });

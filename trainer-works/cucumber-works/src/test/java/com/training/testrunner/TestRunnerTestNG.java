@@ -13,11 +13,13 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		features = {"src/main/resources/com/training/features"},
 		glue = {"com.training.steps"}, 
 		plugin = {
-					"pretty", 
+					
 					"html:target/cucumber-html-report" , 
 					"json:target/cucumber-json-report"
 				}, 
-		monochrome = true
+		monochrome = true, 
+//		tags = {"@sanity","~@telecom"}
+		tags= {"@credit"}
 )
 public class TestRunnerTestNG extends AbstractTestNGCucumberTests {
 	// this class will not have any code 

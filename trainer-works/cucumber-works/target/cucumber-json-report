@@ -1,264 +1,103 @@
 [
   {
-    "comments": [
-      {
-        "line": 1,
-        "value": "# this is my comment"
-      }
-    ],
     "line": 2,
     "elements": [
       {
         "line": 4,
-        "name": "to check if the user is valid",
+        "name": "just check if you can get load",
         "description": "",
-        "id": "to-validate-login;to-check-if-the-user-is-valid",
+        "id": "this-is-for-sample-check-of-credit-score;just-check-if-you-can-get-load",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 79556316,
-              "status": "passed"
+              "duration": 68968088,
+              "error_message": "java.lang.NumberFormatException: For input string: \"5a\"\n\tat java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n\tat java.lang.Integer.parseInt(Integer.java:580)\n\tat java.lang.Integer.parseInt(Integer.java:615)\n\tat com.training.steps.CredtiScoreStep.you_have_enough_credit_score(CredtiScoreStep.java:28)\n\tat ✽.Given you have enough credit score(creditscore.feature:5)\n",
+              "status": "failed"
             },
             "line": 5,
-            "name": "the web application is loaded",
+            "name": "you have enough credit score",
             "match": {
-              "location": "LoginStep.the_web_application_is_loaded()"
+              "location": "CredtiScoreStep.you_have_enough_credit_score(DataTable)"
             },
+            "rows": [
+              {
+                "comments": [
+                  {
+                    "line": 6,
+                    "value": "## heading"
+                  }
+                ],
+                "cells": [
+                  "work_type",
+                  "years_of_exp"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "govt",
+                  "5a"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "private",
+                  "6b"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "consultant",
+                  "9"
+                ],
+                "line": 10
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 36615,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 6,
-            "name": "the user logs in with user name",
+            "line": 11,
+            "name": "you apply for loan",
             "match": {
-              "location": "LoginStep.the_user_logs_in_with_user_name()"
+              "location": "CredtiScoreStep.you_apply_for_loan()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 44815,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the password is entered",
-            "match": {
-              "location": "LoginStep.the_password_is_entered()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1208592,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user is \"valid\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "valid",
-                  "offset": 13
-                }
-              ],
-              "location": "LoginStep.the_user_is_type(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 49895,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "take the user to \"home\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "home",
-                  "offset": 18
-                }
-              ],
-              "location": "LoginStep.take_the_user_to_userPage_page(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 11,
-        "name": "to check if the user is invalid",
-        "description": "",
-        "id": "to-validate-login;to-check-if-the-user-is-invalid",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 34439,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
-            "name": "the web application is loaded",
+            "name": "loan is sanctioned",
             "match": {
-              "location": "LoginStep.the_web_application_is_loaded()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 23600,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the user logs in with user name",
-            "match": {
-              "location": "LoginStep.the_user_logs_in_with_user_name()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 26771,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "the password is entered",
-            "match": {
-              "location": "LoginStep.the_password_is_entered()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 46455,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the user is \"invalid\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "invalid",
-                  "offset": 13
-                }
-              ],
-              "location": "LoginStep.the_user_is_type(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 44576,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "take the user to \"error\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "error",
-                  "offset": 18
-                }
-              ],
-              "location": "LoginStep.take_the_user_to_userPage_page(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 18,
-        "name": "to check if the user is invalid",
-        "description": "",
-        "id": "to-validate-login;to-check-if-the-user-is-invalid",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 34657,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the web application is loaded",
-            "match": {
-              "location": "LoginStep.the_web_application_is_loaded()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 22416,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the user logs in with user name",
-            "match": {
-              "location": "LoginStep.the_user_logs_in_with_user_name()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 21754,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the password is entered",
-            "match": {
-              "location": "LoginStep.the_password_is_entered()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 44111,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "the user is \"manager\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "manager",
-                  "offset": 13
-                }
-              ],
-              "location": "LoginStep.the_user_is_type(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 40020,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "take the user to \"successmanager\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "successmanager",
-                  "offset": 18
-                }
-              ],
-              "location": "LoginStep.take_the_user_to_userPage_page(String)"
+              "location": "CredtiScoreStep.loan_is_sanctioned()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "to validate login",
+    "name": "this is for sample check of credit score",
     "description": "",
-    "id": "to-validate-login",
+    "id": "this-is-for-sample-check-of-credit-score",
     "keyword": "Feature",
-    "uri": "login.feature"
+    "uri": "creditscore.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@sanity"
+      },
+      {
+        "line": 1,
+        "name": "@credit"
+      }
+    ]
   }
 ]
