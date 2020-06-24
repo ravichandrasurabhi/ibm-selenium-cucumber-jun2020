@@ -11,7 +11,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@RunWith(Cucumber.class)
 @CucumberOptions(
 		features = {"src/main/resources/com/training/features"},
-		glue = {"com.training.steps"}, 
+		glue = {"com.training.steps", "com.training.util"}, 
 		plugin = {
 					"pretty", 
 					"html:target/cucumber-html-report" , 
@@ -19,7 +19,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 				}, 
 		monochrome = true, 
 //		tags = {"@sanity","~@telecom"}
-		tags= {"@product"}
+		tags= {"@sanity"}
 )
 public class TestRunnerTestNG extends AbstractTestNGCucumberTests {
 	// this class will not have any code 

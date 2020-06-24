@@ -1,0 +1,112 @@
+Scenario 
+	Given
+	When 
+	Then 
+	
+Scenario 
+	Given
+	When 
+	Then 
+	
+	---------------------------
+Scenario Outline: 
+       Given the web application is loaded
+       When the user logs in with user name
+	  	   |username|
+	       |saileela|
+	       |rahul|
+       And the password is entered
+       When the user is "<user_type>"
+       Then take the user to "<home_screen>" page
+	
+Examples: 
+	| user_type | home_screen | 
+	| valid 	| home page | 
+	| invalid   | error page | 
+	| manager   | manager home page |
+	
+	
+	
+	Scenario : 
+	       Given the web application is loaded
+	       When the user logs in with user name
+	       And the password is entered
+	       When the user is "valid"
+	       Then take the user to "home page" page
+	Scenario : 
+	       Given the web application is loaded
+	       When the user logs in with user name
+	       And the password is entered
+	       When the user is "invalid"
+	       Then take the user to "error page" page
+	
+	
+	
+Hooks are global 
+if you have any number of feature file then hooks are applied 
+
+Background 
+Are local to a feature file and global to all the scenarios in features 
+
+	
+with scenario outline 
+@Given("^the browser is launched$")
+public void the_browser_is_launched() throws Throwable {
+   
+}
+
+@Given("^enter the login Details are given$")
+public void enter_the_login_Details_are_given(DataTable arg1) throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
+    // E,K,V must be a scalar (String, Integer, Date, enum etc)
+    throw new PendingException();
+}
+
+@When("^the product is \"([^\"]*)\"$")
+public void the_product_is(String arg1) throws Throwable {
+    
+}
+@Then("^virtual Private Network Product Catalog page \"([^\"]*)\"$")
+public void virtual_Private_Network_Product_Catalog_page(String arg1) throws Throwable {
+   
+}
+
+@Then("^select the product from the list$")
+public void select_the_product_from_the_list() throws Throwable {
+   
+}	 
+@Then("^user should not add more than \"([^\"]*)\"$")
+public void user_should_not_add_more_than(String arg1) throws Throwable {
+   
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -3,31 +3,514 @@
     "line": 2,
     "elements": [
       {
-        "line": 18,
-        "name": "",
+        "before": [
+          {
+            "result": {
+              "duration": 138037,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "just check if you can get load",
         "description": "",
-        "id": "to-shop-for-the-product;;;2",
+        "id": "this-is-for-sample-check-of-credit-score;just-check-if-you-can-get-load",
+        "after": [
+          {
+            "result": {
+              "duration": 29616,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 120597355,
+              "duration": 73603546,
               "status": "passed"
             },
             "line": 5,
-            "name": "the browser is launched",
+            "name": "you have enough credit score",
             "match": {
-              "location": "ProductStep.the_browser_is_launched()"
+              "location": "CredtiScoreStep.you_have_enough_credit_score(DataTable)"
+            },
+            "rows": [
+              {
+                "comments": [
+                  {
+                    "line": 6,
+                    "value": "## heading"
+                  }
+                ],
+                "cells": [
+                  "work_type",
+                  "years_of_exp"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "govt",
+                  "5"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "private",
+                  "6"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "consultant",
+                  "9"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 44156,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "you apply for loan",
+            "match": {
+              "location": "CredtiScoreStep.you_apply_for_loan()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33329,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "loan is sanctioned",
+            "match": {
+              "location": "CredtiScoreStep.loan_is_sanctioned()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "this is for sample check of credit score",
+    "description": "",
+    "id": "this-is-for-sample-check-of-credit-score",
+    "keyword": "Feature",
+    "uri": "creditscore.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@sanity"
+      },
+      {
+        "line": 1,
+        "name": "@credit"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# this is my comment"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 64474,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 45165,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpLogin()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "to check if the user is valid",
+        "description": "",
+        "id": "to-validate-login;to-check-if-the-user-is-valid",
+        "after": [
+          {
+            "result": {
+              "duration": 30527,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 27055,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownLogin()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 115063,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the web application is loaded",
+            "match": {
+              "location": "LoginStep.the_web_application_is_loaded()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2108905,
+              "duration": 137241,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user logs in with user name",
+            "match": {
+              "location": "LoginStep.the_user_logs_in_with_user_name(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "saileela"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "rahul"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36373,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the password is entered",
+            "match": {
+              "location": "LoginStep.the_password_is_entered()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 465368,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user is \"valid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStep.the_user_is_type(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59545,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "take the user to \"home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginStep.take_the_user_to_userPage_page(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@validlogin"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 26378,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 51633,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpLogin()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "to check if the user is invalid",
+        "description": "",
+        "id": "to-validate-login;to-check-if-the-user-is-invalid",
+        "after": [
+          {
+            "result": {
+              "duration": 19515,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 23674,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownLogin()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31155,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the web application is loaded",
+            "match": {
+              "location": "LoginStep.the_web_application_is_loaded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 97977,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user logs in with user name",
+            "match": {
+              "location": "LoginStep.the_user_logs_in_with_user_name(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "sarada"
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "imran"
+                ],
+                "line": 22
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45535,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the password is entered",
+            "match": {
+              "location": "LoginStep.the_password_is_entered()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41424,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user is \"invalid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStep.the_user_is_type(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36687,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "take the user to \"error\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "error",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginStep.take_the_user_to_userPage_page(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@invalidlogin"
+          }
+        ]
+      }
+    ],
+    "name": "to validate login",
+    "description": "",
+    "id": "to-validate-login",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@sanity"
+      },
+      {
+        "line": 2,
+        "name": "@login"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "# which you want to be repeated for all the scenarios"
+          }
+        ],
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 79372,
               "status": "passed"
             },
             "line": 6,
+            "name": "the browser is launched",
+            "match": {
+              "location": "ProductStep.the_browser_is_launched()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 47755,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 18539,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 154418,
+              "status": "passed"
+            },
+            "line": 9,
             "name": "enter the login Details are given",
             "match": {
               "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
@@ -38,38 +521,38 @@
                   "username",
                   "password"
                 ],
-                "line": 7
+                "line": 10
               },
               {
                 "cells": [
                   "mintu",
                   "secret123"
                 ],
-                "line": 8
+                "line": 11
               },
               {
                 "cells": [
                   "richa",
                   "goswami333"
                 ],
-                "line": 9
+                "line": 12
               },
               {
                 "cells": [
                   "shrikant",
                   "kanth1234"
                 ],
-                "line": 10
+                "line": 13
               }
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 415674,
+              "duration": 50919,
               "status": "passed"
             },
-            "line": 11,
+            "line": 14,
             "name": "the product is \"product selected\"",
             "match": {
               "arguments": [
@@ -87,10 +570,10 @@
           },
           {
             "result": {
-              "duration": 49301,
+              "duration": 36685,
               "status": "passed"
             },
-            "line": 12,
+            "line": 15,
             "name": "virtual Private Network Product Catalog page \"loaded\"",
             "match": {
               "arguments": [
@@ -108,10 +591,10 @@
           },
           {
             "result": {
-              "duration": 32807,
+              "duration": 22577,
               "status": "passed"
             },
-            "line": 13,
+            "line": 16,
             "name": "select the product from the list",
             "match": {
               "location": "ProductStep.select_the_product_from_the_list()"
@@ -120,10 +603,10 @@
           },
           {
             "result": {
-              "duration": 60373,
+              "duration": 46209,
               "status": "passed"
             },
-            "line": 14,
+            "line": 17,
             "name": "user should not add more than \"3\"",
             "match": {
               "arguments": [
@@ -152,31 +635,68 @@
         ]
       },
       {
-        "line": 19,
+        "comments": [
+          {
+            "line": 4,
+            "value": "# which you want to be repeated for all the scenarios"
+          }
+        ],
+        "line": 5,
         "name": "",
         "description": "",
-        "id": "to-shop-for-the-product;;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 42225,
+              "duration": 39731,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "the browser is launched",
             "match": {
               "location": "ProductStep.the_browser_is_launched()"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "before": [
           {
             "result": {
-              "duration": 118524,
+              "duration": 21477,
               "status": "passed"
             },
-            "line": 6,
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 17671,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 113807,
+              "status": "passed"
+            },
+            "line": 9,
             "name": "enter the login Details are given",
             "match": {
               "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
@@ -187,38 +707,38 @@
                   "username",
                   "password"
                 ],
-                "line": 7
+                "line": 10
               },
               {
                 "cells": [
                   "mintu",
                   "secret123"
                 ],
-                "line": 8
+                "line": 11
               },
               {
                 "cells": [
                   "richa",
                   "goswami333"
                 ],
-                "line": 9
+                "line": 12
               },
               {
                 "cells": [
                   "shrikant",
                   "kanth1234"
                 ],
-                "line": 10
+                "line": 13
               }
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 45917,
+              "duration": 40374,
               "status": "passed"
             },
-            "line": 11,
+            "line": 14,
             "name": "the product is \"product selected\"",
             "match": {
               "arguments": [
@@ -236,10 +756,10 @@
           },
           {
             "result": {
-              "duration": 54469,
+              "duration": 47107,
               "status": "passed"
             },
-            "line": 12,
+            "line": 15,
             "name": "virtual Private Network Product Catalog page \"not loaded\"",
             "match": {
               "arguments": [
@@ -257,10 +777,10 @@
           },
           {
             "result": {
-              "duration": 37341,
+              "duration": 40780,
               "status": "passed"
             },
-            "line": 13,
+            "line": 16,
             "name": "select the product from the list",
             "match": {
               "location": "ProductStep.select_the_product_from_the_list()"
@@ -269,10 +789,10 @@
           },
           {
             "result": {
-              "duration": 61272,
+              "duration": 56808,
               "status": "passed"
             },
-            "line": 14,
+            "line": 17,
             "name": "user should not add more than \"5\"",
             "match": {
               "arguments": [
@@ -301,31 +821,68 @@
         ]
       },
       {
-        "line": 20,
+        "comments": [
+          {
+            "line": 4,
+            "value": "# which you want to be repeated for all the scenarios"
+          }
+        ],
+        "line": 5,
         "name": "",
         "description": "",
-        "id": "to-shop-for-the-product;;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 36763,
+              "duration": 50462,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "the browser is launched",
             "match": {
               "location": "ProductStep.the_browser_is_launched()"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "before": [
           {
             "result": {
-              "duration": 105273,
+              "duration": 40933,
               "status": "passed"
             },
-            "line": 6,
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 16477,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 143159,
+              "status": "passed"
+            },
+            "line": 9,
             "name": "enter the login Details are given",
             "match": {
               "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
@@ -336,38 +893,38 @@
                   "username",
                   "password"
                 ],
-                "line": 7
+                "line": 10
               },
               {
                 "cells": [
                   "mintu",
                   "secret123"
                 ],
-                "line": 8
+                "line": 11
               },
               {
                 "cells": [
                   "richa",
                   "goswami333"
                 ],
-                "line": 9
+                "line": 12
               },
               {
                 "cells": [
                   "shrikant",
                   "kanth1234"
                 ],
-                "line": 10
+                "line": 13
               }
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 74906,
+              "duration": 43556,
               "status": "passed"
             },
-            "line": 11,
+            "line": 14,
             "name": "the product is \"product not selected\"",
             "match": {
               "arguments": [
@@ -385,10 +942,10 @@
           },
           {
             "result": {
-              "duration": 95293,
+              "duration": 52758,
               "status": "passed"
             },
-            "line": 12,
+            "line": 15,
             "name": "virtual Private Network Product Catalog page \"loaded\"",
             "match": {
               "arguments": [
@@ -406,10 +963,10 @@
           },
           {
             "result": {
-              "duration": 23859,
+              "duration": 20486,
               "status": "passed"
             },
-            "line": 13,
+            "line": 16,
             "name": "select the product from the list",
             "match": {
               "location": "ProductStep.select_the_product_from_the_list()"
@@ -418,10 +975,10 @@
           },
           {
             "result": {
-              "duration": 43301,
+              "duration": 34511,
               "status": "passed"
             },
-            "line": 14,
+            "line": 17,
             "name": "user should not add more than \"3\"",
             "match": {
               "arguments": [
@@ -450,31 +1007,68 @@
         ]
       },
       {
-        "line": 21,
+        "comments": [
+          {
+            "line": 4,
+            "value": "# which you want to be repeated for all the scenarios"
+          }
+        ],
+        "line": 5,
         "name": "",
         "description": "",
-        "id": "to-shop-for-the-product;;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 53650,
+              "duration": 24803,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "the browser is launched",
             "match": {
               "location": "ProductStep.the_browser_is_launched()"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "before": [
           {
             "result": {
-              "duration": 84820,
+              "duration": 24297,
               "status": "passed"
             },
-            "line": 6,
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 17560,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 129780,
+              "status": "passed"
+            },
+            "line": 9,
             "name": "enter the login Details are given",
             "match": {
               "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
@@ -485,38 +1079,38 @@
                   "username",
                   "password"
                 ],
-                "line": 7
+                "line": 10
               },
               {
                 "cells": [
                   "mintu",
                   "secret123"
                 ],
-                "line": 8
+                "line": 11
               },
               {
                 "cells": [
                   "richa",
                   "goswami333"
                 ],
-                "line": 9
+                "line": 12
               },
               {
                 "cells": [
                   "shrikant",
                   "kanth1234"
                 ],
-                "line": 10
+                "line": 13
               }
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 54873,
+              "duration": 40147,
               "status": "passed"
             },
-            "line": 11,
+            "line": 14,
             "name": "the product is \"product not selected\"",
             "match": {
               "arguments": [
@@ -534,10 +1128,10 @@
           },
           {
             "result": {
-              "duration": 36709,
+              "duration": 33933,
               "status": "passed"
             },
-            "line": 12,
+            "line": 15,
             "name": "virtual Private Network Product Catalog page \"not loaded\"",
             "match": {
               "arguments": [
@@ -555,10 +1149,10 @@
           },
           {
             "result": {
-              "duration": 35724,
+              "duration": 34699,
               "status": "passed"
             },
-            "line": 13,
+            "line": 16,
             "name": "select the product from the list",
             "match": {
               "location": "ProductStep.select_the_product_from_the_list()"
@@ -567,10 +1161,10 @@
           },
           {
             "result": {
-              "duration": 56478,
+              "duration": 51399,
               "status": "passed"
             },
-            "line": 14,
+            "line": 17,
             "name": "user should not add more than \"3\"",
             "match": {
               "arguments": [
@@ -599,31 +1193,68 @@
         ]
       },
       {
-        "line": 22,
+        "comments": [
+          {
+            "line": 4,
+            "value": "# which you want to be repeated for all the scenarios"
+          }
+        ],
+        "line": 5,
         "name": "",
         "description": "",
-        "id": "to-shop-for-the-product;;;6",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 38997,
+              "duration": 46985,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "the browser is launched",
             "match": {
               "location": "ProductStep.the_browser_is_launched()"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "before": [
           {
             "result": {
-              "duration": 80842,
+              "duration": 24065,
               "status": "passed"
             },
-            "line": 6,
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 15989,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 140222,
+              "status": "passed"
+            },
+            "line": 9,
             "name": "enter the login Details are given",
             "match": {
               "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
@@ -634,38 +1265,38 @@
                   "username",
                   "password"
                 ],
-                "line": 7
+                "line": 10
               },
               {
                 "cells": [
                   "mintu",
                   "secret123"
                 ],
-                "line": 8
+                "line": 11
               },
               {
                 "cells": [
                   "richa",
                   "goswami333"
                 ],
-                "line": 9
+                "line": 12
               },
               {
                 "cells": [
                   "shrikant",
                   "kanth1234"
                 ],
-                "line": 10
+                "line": 13
               }
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 63472,
+              "duration": 53555,
               "status": "passed"
             },
-            "line": 11,
+            "line": 14,
             "name": "the product is \"product selected not available\"",
             "match": {
               "arguments": [
@@ -683,10 +1314,10 @@
           },
           {
             "result": {
-              "duration": 76103,
+              "duration": 40955,
               "status": "passed"
             },
-            "line": 12,
+            "line": 15,
             "name": "virtual Private Network Product Catalog page \"loaded\"",
             "match": {
               "arguments": [
@@ -704,10 +1335,10 @@
           },
           {
             "result": {
-              "duration": 38062,
+              "duration": 23413,
               "status": "passed"
             },
-            "line": 13,
+            "line": 16,
             "name": "select the product from the list",
             "match": {
               "location": "ProductStep.select_the_product_from_the_list()"
@@ -716,10 +1347,10 @@
           },
           {
             "result": {
-              "duration": 60497,
+              "duration": 46412,
               "status": "passed"
             },
-            "line": 14,
+            "line": 17,
             "name": "user should not add more than \"1\"",
             "match": {
               "arguments": [
@@ -748,31 +1379,68 @@
         ]
       },
       {
-        "line": 23,
+        "comments": [
+          {
+            "line": 4,
+            "value": "# which you want to be repeated for all the scenarios"
+          }
+        ],
+        "line": 5,
         "name": "",
         "description": "",
-        "id": "to-shop-for-the-product;;;7",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 34796,
+              "duration": 24636,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "the browser is launched",
             "match": {
               "location": "ProductStep.the_browser_is_launched()"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "before": [
           {
             "result": {
-              "duration": 113706,
+              "duration": 37917,
               "status": "passed"
             },
-            "line": 6,
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 14622,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 103532,
+              "status": "passed"
+            },
+            "line": 9,
             "name": "enter the login Details are given",
             "match": {
               "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
@@ -783,38 +1451,38 @@
                   "username",
                   "password"
                 ],
-                "line": 7
+                "line": 10
               },
               {
                 "cells": [
                   "mintu",
                   "secret123"
                 ],
-                "line": 8
+                "line": 11
               },
               {
                 "cells": [
                   "richa",
                   "goswami333"
                 ],
-                "line": 9
+                "line": 12
               },
               {
                 "cells": [
                   "shrikant",
                   "kanth1234"
                 ],
-                "line": 10
+                "line": 13
               }
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 66407,
+              "duration": 38186,
               "status": "passed"
             },
-            "line": 11,
+            "line": 14,
             "name": "the product is \"product selected not available\"",
             "match": {
               "arguments": [
@@ -832,10 +1500,10 @@
           },
           {
             "result": {
-              "duration": 74588,
+              "duration": 43274,
               "status": "passed"
             },
-            "line": 12,
+            "line": 15,
             "name": "virtual Private Network Product Catalog page \"not loaded\"",
             "match": {
               "arguments": [
@@ -853,10 +1521,10 @@
           },
           {
             "result": {
-              "duration": 28616,
+              "duration": 16578,
               "status": "passed"
             },
-            "line": 13,
+            "line": 16,
             "name": "select the product from the list",
             "match": {
               "location": "ProductStep.select_the_product_from_the_list()"
@@ -865,10 +1533,10 @@
           },
           {
             "result": {
-              "duration": 65051,
+              "duration": 68290,
               "status": "passed"
             },
-            "line": 14,
+            "line": 17,
             "name": "user should not add more than \"3\"",
             "match": {
               "arguments": [
@@ -895,6 +1563,89 @@
             "name": "@sanity"
           }
         ]
+      },
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "# which you want to be repeated for all the scenarios"
+          }
+        ],
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 68711,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the browser is launched",
+            "match": {
+              "location": "ProductStep.the_browser_is_launched()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 21353,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;",
+        "after": [
+          {
+            "result": {
+              "duration": 24403,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 44377,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user is valid",
+            "match": {
+              "location": "ProductStep.user_is_valid()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42685,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "say hi",
+            "match": {
+              "location": "ProductStep.say_hi()"
+            },
+            "keyword": "Then "
+          }
+        ]
       }
     ],
     "name": "to shop for the product",
@@ -910,6 +1661,118 @@
       {
         "line": 1,
         "name": "@product"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 29186,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "to check if the user has dialed valid number and talking",
+        "description": "",
+        "id": "validating-the-user-call-details;to-check-if-the-user-has-dialed-valid-number-and-talking",
+        "after": [
+          {
+            "result": {
+              "duration": 68108,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 73996,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the telephone is working",
+            "match": {
+              "location": "TelecomStep.the_telephone_is_working()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38162,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the number is dialed",
+            "match": {
+              "location": "TelecomStep.the_number_is_dialed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21048,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "ring tone is heard",
+            "match": {
+              "location": "TelecomStep.ring_tone_is_heard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37732,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the call is picked by recipient",
+            "match": {
+              "location": "TelecomStep.the_call_is_picked_by_recipient()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29145,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "there should not be a distrubance",
+            "match": {
+              "location": "TelecomStep.there_should_not_be_a_distrubance()"
+            },
+            "keyword": "But "
+          }
+        ]
+      }
+    ],
+    "name": "validating the user call details",
+    "description": "",
+    "id": "validating-the-user-call-details",
+    "keyword": "Feature",
+    "uri": "telecom.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@sanity"
+      },
+      {
+        "line": 1,
+        "name": "@telecom"
       }
     ]
   }

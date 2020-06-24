@@ -28,7 +28,6 @@ public class ProductStep {
 					"\tPassword: " + temp.get("password")
 				);
 		}
-
 	}
 
 	@When("^the product is \"([^\"]*)\"$")
@@ -51,5 +50,21 @@ public class ProductStep {
 		System.out.println("**** user should not add more than " 
 				+ number_of_items +" ****");
 	}
+
+	//////////////////////////////
+	
+	
+	
+
+@When("^user is valid$")
+public void user_is_valid() throws Throwable {
+    System.out.println("user is valid*****");
+}
+
+@Then("^say hi$")
+public void say_hi() throws Throwable {
+    System.out.println("say hi*********");
+}
+
 
 }

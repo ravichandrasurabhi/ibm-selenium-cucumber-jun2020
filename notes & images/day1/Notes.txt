@@ -12,7 +12,7 @@ Sprint 1 or 2 weeks
 
 
 TDD (Test Driven Development) - Developer 
-BDD (Behavioural Driven Development) - Stake Hodler - English
+BDD (Behavioural Driven Development) - Stake Holder - English
 									Kannada/French 
 
 Given the user name and password 

@@ -1,8 +1,11 @@
 @sanity @product
 Feature: to shop for the product
 
-  Scenario Outline: 
+# which you want to be repeated for all the scenarios 
+Background: 
     Given the browser is launched
+
+  Scenario Outline: 
     And enter the login Details are given
       | username | password   |
       | mintu    | secret123  |
@@ -21,3 +24,12 @@ Feature: to shop for the product
       | product not selected           | not loaded |               3 |
       | product selected not available | loaded     |               1 |
       | product selected not available | not loaded |               3 |
+
+      
+Scenario: 
+	When user is valid 
+	Then say hi
+	
+	
+	
+	
