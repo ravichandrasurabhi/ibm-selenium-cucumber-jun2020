@@ -1,5 +1,9 @@
 package com.training.steps;
 
+import java.util.List;
+import java.util.Map;
+
+import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -15,8 +19,18 @@ public class LoginStep {
 	}
 
 	@When("the user logs in with user name")
-	public void the_user_logs_in_with_user_name() {
+	public void the_user_logs_in_with_user_name( DataTable dataTable) {
 		System.out.println("the user logs in with user name>>>>>>>");
+		
+		List<Map<String, String>> list = dataTable.asMaps(String.class, String.class); 
+		
+		for(Map<String, String> temp: list) {
+			System.out.println(temp.get("username"));
+		}
+		
+		
+		System.out.println("*****************************************");
+		
 	}
 
 	@And("the password is entered")

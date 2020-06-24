@@ -3,92 +3,905 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "just check if you can get load",
+        "line": 18,
+        "name": "",
         "description": "",
-        "id": "this-is-for-sample-check-of-credit-score;just-check-if-you-can-get-load",
+        "id": "to-shop-for-the-product;;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 68968088,
-              "error_message": "java.lang.NumberFormatException: For input string: \"5a\"\n\tat java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n\tat java.lang.Integer.parseInt(Integer.java:580)\n\tat java.lang.Integer.parseInt(Integer.java:615)\n\tat com.training.steps.CredtiScoreStep.you_have_enough_credit_score(CredtiScoreStep.java:28)\n\tat ✽.Given you have enough credit score(creditscore.feature:5)\n",
-              "status": "failed"
+              "duration": 120597355,
+              "status": "passed"
             },
             "line": 5,
-            "name": "you have enough credit score",
+            "name": "the browser is launched",
             "match": {
-              "location": "CredtiScoreStep.you_have_enough_credit_score(DataTable)"
+              "location": "ProductStep.the_browser_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2108905,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter the login Details are given",
+            "match": {
+              "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
             },
             "rows": [
               {
-                "comments": [
-                  {
-                    "line": 6,
-                    "value": "## heading"
-                  }
-                ],
                 "cells": [
-                  "work_type",
-                  "years_of_exp"
+                  "username",
+                  "password"
                 ],
                 "line": 7
               },
               {
                 "cells": [
-                  "govt",
-                  "5a"
+                  "mintu",
+                  "secret123"
                 ],
                 "line": 8
               },
               {
                 "cells": [
-                  "private",
-                  "6b"
+                  "richa",
+                  "goswami333"
                 ],
                 "line": 9
               },
               {
                 "cells": [
-                  "consultant",
-                  "9"
+                  "shrikant",
+                  "kanth1234"
                 ],
                 "line": 10
               }
             ],
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 415674,
+              "status": "passed"
             },
             "line": 11,
-            "name": "you apply for loan",
+            "name": "the product is \"product selected\"",
             "match": {
-              "location": "CredtiScoreStep.you_apply_for_loan()"
+              "arguments": [
+                {
+                  "val": "product selected",
+                  "offset": 16
+                }
+              ],
+              "location": "ProductStep.the_product_is(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 49301,
+              "status": "passed"
             },
             "line": 12,
-            "name": "loan is sanctioned",
+            "name": "virtual Private Network Product Catalog page \"loaded\"",
             "match": {
-              "location": "CredtiScoreStep.loan_is_sanctioned()"
+              "arguments": [
+                {
+                  "val": "loaded",
+                  "offset": 46
+                }
+              ],
+              "location": "ProductStep.virtual_Private_Network_Product_Catalog_page(String)"
             },
+            "matchedColumns": [
+              1
+            ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32807,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "select the product from the list",
+            "match": {
+              "location": "ProductStep.select_the_product_from_the_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60373,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should not add more than \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 31
+                }
+              ],
+              "location": "ProductStep.user_should_not_add_more_than(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@product"
+          },
+          {
+            "line": 1,
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42225,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the browser is launched",
+            "match": {
+              "location": "ProductStep.the_browser_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 118524,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter the login Details are given",
+            "match": {
+              "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "mintu",
+                  "secret123"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "richa",
+                  "goswami333"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "shrikant",
+                  "kanth1234"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45917,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the product is \"product selected\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "product selected",
+                  "offset": 16
+                }
+              ],
+              "location": "ProductStep.the_product_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54469,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "virtual Private Network Product Catalog page \"not loaded\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "not loaded",
+                  "offset": 46
+                }
+              ],
+              "location": "ProductStep.virtual_Private_Network_Product_Catalog_page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37341,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "select the product from the list",
+            "match": {
+              "location": "ProductStep.select_the_product_from_the_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61272,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should not add more than \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 31
+                }
+              ],
+              "location": "ProductStep.user_should_not_add_more_than(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@product"
+          },
+          {
+            "line": 1,
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 36763,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the browser is launched",
+            "match": {
+              "location": "ProductStep.the_browser_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 105273,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter the login Details are given",
+            "match": {
+              "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "mintu",
+                  "secret123"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "richa",
+                  "goswami333"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "shrikant",
+                  "kanth1234"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74906,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the product is \"product not selected\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "product not selected",
+                  "offset": 16
+                }
+              ],
+              "location": "ProductStep.the_product_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95293,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "virtual Private Network Product Catalog page \"loaded\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "loaded",
+                  "offset": 46
+                }
+              ],
+              "location": "ProductStep.virtual_Private_Network_Product_Catalog_page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23859,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "select the product from the list",
+            "match": {
+              "location": "ProductStep.select_the_product_from_the_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43301,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should not add more than \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 31
+                }
+              ],
+              "location": "ProductStep.user_should_not_add_more_than(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@product"
+          },
+          {
+            "line": 1,
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 53650,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the browser is launched",
+            "match": {
+              "location": "ProductStep.the_browser_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 84820,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter the login Details are given",
+            "match": {
+              "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "mintu",
+                  "secret123"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "richa",
+                  "goswami333"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "shrikant",
+                  "kanth1234"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54873,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the product is \"product not selected\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "product not selected",
+                  "offset": 16
+                }
+              ],
+              "location": "ProductStep.the_product_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36709,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "virtual Private Network Product Catalog page \"not loaded\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "not loaded",
+                  "offset": 46
+                }
+              ],
+              "location": "ProductStep.virtual_Private_Network_Product_Catalog_page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 35724,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "select the product from the list",
+            "match": {
+              "location": "ProductStep.select_the_product_from_the_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56478,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should not add more than \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 31
+                }
+              ],
+              "location": "ProductStep.user_should_not_add_more_than(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@product"
+          },
+          {
+            "line": 1,
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 38997,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the browser is launched",
+            "match": {
+              "location": "ProductStep.the_browser_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 80842,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter the login Details are given",
+            "match": {
+              "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "mintu",
+                  "secret123"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "richa",
+                  "goswami333"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "shrikant",
+                  "kanth1234"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63472,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the product is \"product selected not available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "product selected not available",
+                  "offset": 16
+                }
+              ],
+              "location": "ProductStep.the_product_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76103,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "virtual Private Network Product Catalog page \"loaded\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "loaded",
+                  "offset": 46
+                }
+              ],
+              "location": "ProductStep.virtual_Private_Network_Product_Catalog_page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38062,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "select the product from the list",
+            "match": {
+              "location": "ProductStep.select_the_product_from_the_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60497,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should not add more than \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 31
+                }
+              ],
+              "location": "ProductStep.user_should_not_add_more_than(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@product"
+          },
+          {
+            "line": 1,
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "id": "to-shop-for-the-product;;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 34796,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the browser is launched",
+            "match": {
+              "location": "ProductStep.the_browser_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113706,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter the login Details are given",
+            "match": {
+              "location": "ProductStep.enter_the_login_Details_are_given(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "mintu",
+                  "secret123"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "richa",
+                  "goswami333"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "shrikant",
+                  "kanth1234"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66407,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the product is \"product selected not available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "product selected not available",
+                  "offset": 16
+                }
+              ],
+              "location": "ProductStep.the_product_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74588,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "virtual Private Network Product Catalog page \"not loaded\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "not loaded",
+                  "offset": 46
+                }
+              ],
+              "location": "ProductStep.virtual_Private_Network_Product_Catalog_page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28616,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "select the product from the list",
+            "match": {
+              "location": "ProductStep.select_the_product_from_the_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65051,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should not add more than \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 31
+                }
+              ],
+              "location": "ProductStep.user_should_not_add_more_than(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@product"
+          },
+          {
+            "line": 1,
+            "name": "@sanity"
           }
         ]
       }
     ],
-    "name": "this is for sample check of credit score",
+    "name": "to shop for the product",
     "description": "",
-    "id": "this-is-for-sample-check-of-credit-score",
+    "id": "to-shop-for-the-product",
     "keyword": "Feature",
-    "uri": "creditscore.feature",
+    "uri": "product.feature",
     "tags": [
       {
         "line": 1,
@@ -96,7 +909,7 @@
       },
       {
         "line": 1,
-        "name": "@credit"
+        "name": "@product"
       }
     ]
   }

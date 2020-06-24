@@ -25,9 +25,9 @@ regression test - few features you want to test multiple times
 login test  - 500 times 
 customer test - 1000 times 
 
-Tags 
+Tags -done 
 Data tables 
-more than 1 feature file 
+more than 1 feature file  - done 
 
   Scenario: to check if the user is valid
     Given the web application is loaded
@@ -61,12 +61,72 @@ But there should not be a distrubance
 
 
 
+with pretty plugin 
+[RemoteTestNG] detected TestNG version 6.9.4
+
+# this is my comment
+@sanity @login
+Feature: to validate login
+the web application is loaded>>>>>>>
+the user logs in with user name>>>>>>>
+the password is entered>>>>>>
+the user is valid>>>>>>>>
+take the user to home page>>>>>>>>>
+
+  @validlogin
+  Scenario: to check if the user is valid # login.feature:6
+    Given the web application is loaded   # LoginStep.the_web_application_is_loaded()
+    When the user logs in with user name  # LoginStep.the_user_logs_in_with_user_name()
+    And the password is entered           # LoginStep.the_password_is_entered()
+    When the user is "valid"              # LoginStep.the_user_is_type(String)
+    Then take the user to "home" page     # LoginStep.take_the_user_to_userPage_page(String)
+
+1 Scenarios (1 passed)
+5 Steps (5 passed)
+0m0.074s
+
+PASSED: feature(to validate login)
+        Runs Cucumber Feature
+
+===============================================
+    Default test
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+
+Without pretty 
+ 
+the web application is loaded>>>>>>>
+the user logs in with user name>>>>>>>
+the password is entered>>>>>>
+the user is valid>>>>>>>>
+take the user to home page>>>>>>>>>
+
+1 Scenarios (1 passed)
+5 Steps (5 passed)
+0m0.079s
+
+PASSED: feature(to validate login)
+        Runs Cucumber Feature
 
 
 
 
+to work with data table 
 
 
+
+  Scenario: to check if the user is valid
+    Given the web application is loaded
+    When the user logs in with user name
+			a 
+			amit 
+			anand
+			rahul
+			rahil akram 
+    And the password is entered
+    When the user is "valid"
+    Then take the user to "home" page
 
 
 
