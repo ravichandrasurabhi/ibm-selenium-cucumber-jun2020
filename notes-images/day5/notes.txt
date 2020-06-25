@@ -1,0 +1,137 @@
+CapG - PJP 
+Swiggy 
+Telestra 
+
+package com.training.testrunner;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features = {"src/main/resources/com/training/features"}, 
+		glue = {"com.training.steps"}, 
+		plugin = {"pretty", "html:target/cucumber-html-report", 
+					"json:target/cucumber-json-report"} , 
+		monochrome = true 
+)
+public class TestRunner extends AbstractTestNGCucumberTests{}
+
+
+
+
+
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		
+		
+		
+		
+		testng.xml 
+		
+		<?xml version="1.0" encoding="UTF-8"?>
+		<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+		<suite name = "Sample test Suite">
+		   <test name = "Sample test">
+		      <classes>
+		         <class name = "com.training.testrunner.TestRunner" />
+		      </classes>
+		   </test>
+		</suite>
+
+
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package com.training.tests;
+
+
+import static org.junit.Assert.*; 
+
+
+import com.training.util.DriverFactory;
+import com.training.util.DriverNames;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+
+public class LoginTest {
+	
+	private WebDriver driver; 
+	private String URL; 
+	private String URL2; 
+	
+	@Test
+	public void loginTest() {
+		System.out.println("hi.... ");
+	}
+
+	@Before
+	public void setUp() {
+		driver = DriverFactory.getDriver(DriverNames.CHROME); 
+		URL="http://naveenks.com/selenium/LoginForm.html"; 
+	}
+
+	@After
+	public void tearDown() {
+	}
+
+}
+
+
+
+
+
+
+
+http://naveenks.com/selenium/LoginForm.html?uname=username&pwd=Secret#
+http://naveenks.com/selenium/LoginForm.html?uname=Peter&pwd=Testing12345#
+
+
+
+
+working with expedia 
+
+<input id="d1" name="d1" data-stid="input-date" aria-expanded="false" type="text" class="uitk-field-input uitk-menu-trigger is-hidden" placeholder="Check-in" value="2020-06-30">
+
+
+driver.findElement(By.id("d1")).value (2020-07-21)
+
+<button aria-label="Check-in June 30, 2020" data-name="d1" id="d1-btn" data-stid="open-date-picker" type="button" class="uitk-faux-input uitk-form-field-trigger">Jun 30</button>
+
+
+
+
+
