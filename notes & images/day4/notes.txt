@@ -42,7 +42,7 @@ Examples:
 	
 	
 	
-Hooks are global 
+Hooks are global (Before and After)
 if you have any number of feature file then hooks are applied 
 
 Background 
@@ -87,6 +87,10 @@ public void user_should_not_add_more_than(String arg1) throws Throwable {
 	
 	
 	
+download chrome driver 
+https://chromedriver.chromium.org/downloads
+
+https://chromedriver.storage.googleapis.com/index.html?path=83.0.4103.39/
 	
 	
 	
